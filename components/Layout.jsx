@@ -8,10 +8,10 @@ class Layout extends Component {
 	render() {
 			const { children } = this.props
 			return (
-				<ThemeProvider theme={theme}>
+				<>
 					<Header />
 					{children}
-				</ThemeProvider>
+				</>
 			)
 	}
 }

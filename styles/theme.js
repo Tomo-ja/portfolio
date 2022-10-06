@@ -1,4 +1,4 @@
-const theme = {
+const THEME = {
 	colors: 
 		{
 			black: '#06191D',
@@ -25,7 +25,13 @@ const theme = {
 			middle: '24px',
 			large: '36px'
 		},
-	
+	radius:
+		{
+			small: '2.5px',
+			default: '5px',
+			large: '10px',
+			full: '50%'
+		}
 }
 
-export default theme
+export default THEME
