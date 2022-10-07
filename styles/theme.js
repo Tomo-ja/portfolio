@@ -27,9 +27,9 @@ const THEME = {
 		},
 	radius:
 		{
-			small: '2.5px',
-			default: '5px',
-			large: '10px',
+			small: '5px',
+			default: '10px',
+			large: '18px',
 			full: '50%'
 		}
 }

@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
+
+import GallerySection from '../components/GallerySection'
+
 import StyledMain from '../styles/main.styles'
 
 const Home = () => {
@@ -10,9 +13,13 @@ const Home = () => {
         <link rel='icon' href='/favicon.ico'/>
       </Head>
       <StyledMain>
-        home
+        <h1>Hi, I am Tomo<br />
+          <span className='blue'>Junior Developer In Vancouver </span>
+        </h1>
+
+        <GallerySection />
+
       </StyledMain>
-      home
     </div>
   )
 }
