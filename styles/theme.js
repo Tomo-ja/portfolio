@@ -13,7 +13,7 @@ const THEME = {
 			xSmall: '12px',
 			small: '14px',
 			default: '16px',
-			middle: '20px',
+			middle: '18px',
 			large: '24px',
 			xLarge: '32px',
 			xxLarge: '52px'
@@ -23,7 +23,9 @@ const THEME = {
 			small: '8px',
 			default: '16px',
 			middle: '24px',
-			large: '36px'
+			large: '36px',
+			xLarge: '54px',
+			xxLarge: '76px',
 		},
 	radius:
 		{

@@ -9,6 +9,7 @@ const StyledHeader = styled.header`
 	margin-inline: auto;
 	padding-block: ${THEME.spacing.default};
 
+	font-family: 'Raleway', sans-serif;
 
 	nav{
 		display: flex;

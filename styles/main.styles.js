@@ -18,6 +18,10 @@ const StyledMain = styled.main `
 		color: ${THEME.colors.lightBlue};
 	}
 
+	span.bold{
+		font-weight: 700;
+	}
+
 	@media only screen and (max-width: 565px)  {
 		h1{
 			font-size: ${THEME.fontSize.xLarge};
