@@ -22,7 +22,7 @@ const Header = () => {
 					<li><Link href='/'>Home</Link></li>
 					<li><Link href='/projects'>Projects</Link></li>
 					<li><Link href='/contact'>Contact</Link></li>
-					<li><Link href='/resume'>Resume</Link></li>
+					<li><a href='/Resume.pdf' target='_blank' rel="noopener noreferrer">Resume</a></li>
 				</ul>
 			</nav>
 		</StyledHeader>

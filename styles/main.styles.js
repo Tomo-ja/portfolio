@@ -22,6 +22,15 @@ const StyledMain = styled.main `
 		font-weight: 700;
 	}
 
+	span.underLine {
+		border-bottom: 1px solid ${THEME.colors.lightBlue};
+		cursor: pointer;
+
+	}
+
+	a{
+	}
+
 	@media only screen and (max-width: 565px)  {
 		h1{
 			font-size: ${THEME.fontSize.xLarge};
