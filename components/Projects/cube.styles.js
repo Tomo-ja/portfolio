@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 
-
 const Cube = styled.div`
-	width: 200px;
+	width: ${props => `${props.size}px`};
 	aspect-ratio: 1;
   perspective: 400px;
 
@@ -12,7 +11,7 @@ const Cube = styled.div`
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transform: translateZ(-100px);
+  transform: translateZ(${props => `-${props.size / 2}px`});
   transition: transform 1s;
 	}
 
@@ -24,17 +23,17 @@ const Cube = styled.div`
 
 	.cube__face-front{
 		background-color: red;
-		transform: rotateY(  0deg) translateZ(100px);
+		transform: rotateY(  0deg) translateZ(${props => `${props.size / 2}px`});
 	}
 
 	.cube__face-right{
 		background-color: blue;
-		transform: rotateY( 90deg) translateZ(100px);
+		transform: rotateY( 90deg) translateZ(${props => `${props.size / 2}px`});
 	}
 
 	:hover{
 		.cube__self{
-			transform: translateZ(-100px) rotateY( -90deg);
+			transform: translateZ(${props => `-${props.size / 2}px`}) rotateY( -90deg);
 		}
 	}
 
