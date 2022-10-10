@@ -11,6 +11,7 @@ export const floatingUpAnimation = keyframes`
 	}
 `
 
+
 export const moveRightAnimation = keyframes`
 
 `

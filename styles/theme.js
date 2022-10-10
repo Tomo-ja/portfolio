@@ -7,6 +7,7 @@ const THEME = {
 			blue: '#63A69F',
 			lightRed: '#F2836B',
 			yellow: '#FFD34E',
+			gray: '#505050'
 		},
 	fontSize : 
 		{

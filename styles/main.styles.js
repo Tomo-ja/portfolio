@@ -12,6 +12,14 @@ const StyledMain = styled.main `
 
 	h1{
 		font-size: ${THEME.fontSize.xxLarge};
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+
+	h2{
+		font-size: ${THEME.fontSize.xLarge};
+		text-transform: uppercase;
+		font-weight: 400;
 	}
 
 	span.blue{
@@ -28,12 +36,13 @@ const StyledMain = styled.main `
 
 	}
 
-	a{
-	}
-
 	@media only screen and (max-width: 565px)  {
 		h1{
 			font-size: ${THEME.fontSize.xLarge};
+		}
+
+		h2{
+			font-size: ${THEME.fontSize.middle};
 		}
   }
 
