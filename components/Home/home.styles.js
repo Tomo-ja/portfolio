@@ -19,8 +19,7 @@ const StyledHome = styled(StyledMain)`
 	}
 
 	.profile__story{
-
-
+		font-family: 'Roboto', sans-serif;
 	}
 
 	.first-letter{
