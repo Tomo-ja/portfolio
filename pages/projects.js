@@ -18,7 +18,21 @@ const Projects = () => {
 
 	const handleScreenResize = () => {
 		if (typeof window === 'undefined') { return }
-		console.log(window.innerWidth)
+
+		if (window.innerWidth > 895) {
+			setCubeSize(385)
+		} 
+		else if (window.innerWidth > 704) {
+			setCubeSize(300)
+		}
+		else if (window.innerWidth > 464) {
+			setCubeSize(400)
+		}
+		else if (window.innerWidth < 465) {
+			setCubeSize(300)
+		}
+	
+
 	}
 	useEffect(() => {
 		window.addEventListener('resize', handleScreenResize)
@@ -60,11 +74,11 @@ const Projects = () => {
 									</div>
 									<div className="project__external-links">
 										<StyledIconWrapper>
-											<FontAwesomeIcon icon={faGithub} color='white' />
+											<a href={project.githubUrl} target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faGithub} color='white' /></a>
 										</StyledIconWrapper>
 										{project.productUrl &&
 											<StyledIconWrapper>
-												<FontAwesomeIcon icon={faArrowUpRightFromSquare} color='white' />
+												<a href={project.productUrl} target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faArrowUpRightFromSquare} color='white' /></a>
 											</StyledIconWrapper>
 										}
 									</div>

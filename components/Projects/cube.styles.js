@@ -9,6 +9,10 @@ const Cube = styled.div`
 	aspect-ratio: 1;
   perspective: 400px;
 
+	@media only screen and (max-width: 465px)  {
+		margin-right: 0
+  }
+
 	.cube__self{
 	width: 100%;
   height: 100%;

@@ -16,6 +16,7 @@ const StyledProjects = styled(StyledMain)`
 
 	section{
 		display: flex;
+		justify-content: center;
 		flex-wrap: wrap;
 	}
 
@@ -49,6 +50,7 @@ const StyledProjects = styled(StyledMain)`
 			margin-bottom: ${THEME.spacing.small};
 			font-family: 'Roboto', sans-serif;
 			font-weight: 300;
+			overflow: scroll;
 		}
 
 		&__external-links{
