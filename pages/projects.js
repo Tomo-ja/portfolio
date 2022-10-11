@@ -1,8 +1,13 @@
 import Head from "next/head"
 import { useEffect, useState } from "react"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
+
 import StyledProjects from "../components/Projects/projects.styles"
-import Cube from "../components/Projects/cube.styles"
+import StyledIconWrapper from "../styles/iconWrapper.styles"
+import StyledCube from "../components/Projects/cube.styles"
 
 import projectsData from "../data/projectsData"
 
@@ -32,7 +37,7 @@ const Projects = () => {
 				</h2>
 				<section>
 					{projectsData.map(project => (
-						<Cube 
+						<StyledCube 
 							size={cubeSize}
 							key={project.title}
 						>
@@ -41,13 +46,31 @@ const Projects = () => {
 									className="cube__face cube__face-front" 
 									style={{backgroundImage: `url(${project.imgUrl})`}}
 								>
-									<h3>{project.title}</h3>
+									<h3 className="project__title-front">{project.title}</h3>
 								</div>
-								<div className="cube__face cube__face-right">
-									explain
+								<div className="cube__face cube__face-right project__detail">
+									<div>
+										<h3 className="project__title-right">{project.title}</h3>
+										{project.envList.map(env => (
+											<span key={env} className='project__env'>{env}</span>
+										))}
+										{project.description.map(paragraph => (
+											<p className="project__description" key={paragraph[0]}>{paragraph}</p>
+										))}
+									</div>
+									<div className="project__external-links">
+										<StyledIconWrapper>
+											<FontAwesomeIcon icon={faGithub} color='white' />
+										</StyledIconWrapper>
+										{project.productUrl &&
+											<StyledIconWrapper>
+												<FontAwesomeIcon icon={faArrowUpRightFromSquare} color='white' />
+											</StyledIconWrapper>
+										}
+									</div>
 								</div>
 							</div>
-						</Cube>
+						</StyledCube>
 					))}
 				</section>
 			</StyledProjects>

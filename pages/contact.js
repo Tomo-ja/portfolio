@@ -7,6 +7,7 @@ import Form from '../components/Contact/form'
 
 import StyledContact from '../components/Contact/contact.styles'
 import StyledAccountInfo from '../components/Contact/accountInfo.styles'
+import StyledIconWrapper from "../styles/iconWrapper.styles"
 
 
 
@@ -28,15 +29,15 @@ const Contact = () => {
 					<Form />
 					<div className="accountInfo">
 						<StyledAccountInfo href='https://www.linkedin.com/in/Tomo-ja' target='_blank'>
-							<div>
+							<StyledIconWrapper>
 								<FontAwesomeIcon icon={faLinkedinIn} color="white"/>
-							</div>
+							</StyledIconWrapper>
 							<p>https://www.linkedin.com/in/Tomo-ja</p>
 						</StyledAccountInfo>
 						<StyledAccountInfo href='https://github.com/Tomo-ja' target='_blank'>
-							<div>
+							<StyledIconWrapper>
 								<FontAwesomeIcon icon={faGithub} color="white"/>
-							</div>
+							</StyledIconWrapper>
 							<p>https://github.com/Tomo-ja</p>
 						</StyledAccountInfo>
 					</div>

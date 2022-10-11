@@ -23,9 +23,6 @@ const Cube = styled.div`
 		width: 100%;
 		height: 100%;
 
-		display: flex;
-		justify-content: end;
-		align-items: flex-end;
 	}
 
 	.cube__face-front{
@@ -34,11 +31,18 @@ const Cube = styled.div`
 		background-repeat: no-repeat;
 		background-position: left top;
 		transform: rotateY(  0deg) translateZ(${props => `${props.size / 2}px`});
+
+		display: flex;
+		justify-content: end;
+		align-items: flex-end;
+
 	}
 
 	.cube__face-right{
 		background-color: ${THEME.colors.black};
 		transform: rotateY( 90deg) translateZ(${props => `${props.size / 2}px`});
+
+
 	}
 
 	:hover{
