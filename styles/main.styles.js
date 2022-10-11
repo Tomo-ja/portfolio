@@ -20,6 +20,7 @@ const StyledMain = styled.main `
 		font-size: ${THEME.fontSize.xLarge};
 		text-transform: uppercase;
 		font-weight: 400;
+		margin-bottom: 2em;
 	}
 
 	span.blue{
@@ -33,7 +34,6 @@ const StyledMain = styled.main `
 	span.underLine {
 		border-bottom: 1px solid ${THEME.colors.lightBlue};
 		cursor: pointer;
-
 	}
 
 	@media only screen and (max-width: 565px)  {

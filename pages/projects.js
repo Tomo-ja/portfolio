@@ -1,15 +1,18 @@
 import Head from "next/head"
-
-import StyledMain from "../styles/main.styles"
-import Cube from "../components/Projects/cube.styles"
 import { useEffect, useState } from "react"
+
+import StyledProjects from "../components/Projects/projects.styles"
+import Cube from "../components/Projects/cube.styles"
+
+import projectsData from "../data/projectsData"
 
 const Projects = () => {
 
-	const [cubeSize, setCubeSize] = useState(300);
+	const [cubeSize, setCubeSize] = useState(385);
 
 
 	const handleScreenResize = () => {
+		if (typeof window === 'undefined') { return }
 		console.log(window.innerWidth)
 	}
 	useEffect(() => {
@@ -23,17 +26,31 @@ const Projects = () => {
 				<title>Projects</title>
         <link rel='icon' href='/favicon.ico'/>
 			</Head>
-			<StyledMain>
+			<StyledProjects>
 				<h2>I am Junior<br />
 					<span className="blue">But I am good at what I do</span>
 				</h2>
-				<Cube size={200}>
-					<div className="cube__self">
-						<div className="cube__face cube__face-front">image</div>
-						<div className="cube__face cube__face-right">explain</div>
-					</div>
-				</Cube>
-			</StyledMain>
+				<section>
+					{projectsData.map(project => (
+						<Cube 
+							size={cubeSize}
+							key={project.title}
+						>
+							<div className="cube__self">
+								<div 
+									className="cube__face cube__face-front" 
+									style={{backgroundImage: `url(${project.imgUrl})`}}
+								>
+									<h3>{project.title}</h3>
+								</div>
+								<div className="cube__face cube__face-right">
+									explain
+								</div>
+							</div>
+						</Cube>
+					))}
+				</section>
+			</StyledProjects>
 		</div>
 	)
 }

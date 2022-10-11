@@ -4,9 +4,6 @@ import THEME from "../../styles/theme";
 
 const StyledContact = styled(StyledMain)`
 
-	h2{
-		margin-bottom: 2em;
-	}
 
 	section{
 		display:flex;
