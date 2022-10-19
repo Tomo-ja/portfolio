@@ -4,6 +4,7 @@ import THEME from "../../styles/theme";
 const StyledForm = styled.form`
 
 	width: 60%;
+	margin-bottom: ${THEME.spacing.xLarge};
 	font-family: 'Raleway', sans-serif;
 
 	input, textarea{
@@ -36,7 +37,7 @@ const StyledForm = styled.form`
 			position: absolute;
 			top: 10px;
 			left: 0px;
-			color: ${THEME.colors.white};
+			color: ${THEME.colors.lightGray};
 			font-size: ${THEME.fontSize.default};
 			pointer-events: none;
 			transition: 300ms ease all;
@@ -67,9 +68,12 @@ const StyledForm = styled.form`
 			font-size: ${THEME.fontSize.default};
 			transition: all ease 0.3s;
 
-			:hover{
-				border-radius: ${THEME.radius.default};
+			:not(:disabled){
+				:hover{
+					border-radius: ${THEME.radius.default};
+				}
 			}
+
 
 			&:disabled{
 				background-color: ${THEME.colors.gray};

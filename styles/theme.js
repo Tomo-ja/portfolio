@@ -5,10 +5,11 @@ const THEME = {
 			white: '#ffffff',
 			lightBlue: '#80CFF1',
 			blue: '#63A69F',
-			lightRed: '#F2836B',
-			yellow: '#FFD34E',
+			lightRed: '#F4989C',
+			yellow: '#FDDD0D',
 			gray: '#505050',
-			lightGray: '#a8b2d1'
+			lightGray: '#a8b2d1',
+			green: '#45B06A'
 		},
 	fontSize : 
 		{

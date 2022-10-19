@@ -14,9 +14,13 @@ const StyledContact = styled(StyledMain)`
 	}
 
 
-	@media only screen and (max-width: 760px)  {
+	@media only screen and (max-width: 760px) {
+		section{
+			flex-direction: column;
+		}
 		.accountInfo{
-			margin-left: ${THEME.spacing.middle};
+			display: flex;
+			margin-left: 0;
 		}
 	}
 `

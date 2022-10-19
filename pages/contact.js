@@ -26,7 +26,9 @@ const Contact = () => {
 				</h2>
 
 				<section>
+
 					<Form />
+					
 					<div className="accountInfo">
 						<StyledAccountInfo href='https://www.linkedin.com/in/Tomo-ja' target='_blank'>
 							<StyledIconWrapper>

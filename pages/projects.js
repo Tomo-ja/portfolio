@@ -46,9 +46,9 @@ const Projects = () => {
         <link rel='icon' href='/favicon.ico'/>
 			</Head>
 			<StyledProjects>
-				<h2>I am Junior<br />
+				<h1>I am Junior<br />
 					<span className="blue">But I am good at what I do</span>
-				</h2>
+				</h1>
 				<section>
 					{projectsData.map(project => (
 						<StyledCube 
@@ -73,11 +73,11 @@ const Projects = () => {
 										))}
 									</div>
 									<div className="project__external-links">
-										<StyledIconWrapper>
+										<StyledIconWrapper onProject={true}>
 											<a href={project.githubUrl} target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faGithub} color='white' /></a>
 										</StyledIconWrapper>
 										{project.productUrl &&
-											<StyledIconWrapper>
+											<StyledIconWrapper onProject={true}>
 												<a href={project.productUrl} target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faArrowUpRightFromSquare} color='white' /></a>
 											</StyledIconWrapper>
 										}

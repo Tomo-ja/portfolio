@@ -25,14 +25,15 @@ const StyledProjects = styled(StyledMain)`
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			padding: ${THEME.spacing.default};
 		}
 
 		&__title-front{
-			border: 1px solid ${THEME.colors.white};
 			padding: ${THEME.spacing.default};
 		}
 
 		&__title-right{
+			background-color: ${THEME.colors.green};
 			font-size: ${THEME.fontSize.large};
 			margin-bottom: ${THEME.spacing.small};
 		}
@@ -41,9 +42,10 @@ const StyledProjects = styled(StyledMain)`
 			display: inline-block;
 			margin-right: ${THEME.spacing.default};
 			margin-bottom: ${THEME.spacing.large};
-			color: ${THEME.colors.lightGray};
+			color: ${THEME.colors.black};
 			font-family: 'Raleway', sans-serif;
 			font-size: ${THEME.fontSize.small};
+			font-weight: bold;
 		}
 
 		&__description{
