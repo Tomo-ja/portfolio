@@ -23,13 +23,13 @@ const Projects = () => {
 			setCubeSize(385)
 		} 
 		else if (window.innerWidth > 704) {
-			setCubeSize(300)
+			setCubeSize(350)
 		}
 		else if (window.innerWidth > 464) {
 			setCubeSize(400)
 		}
 		else if (window.innerWidth < 465) {
-			setCubeSize(300)
+			setCubeSize(350)
 		}
 	
 

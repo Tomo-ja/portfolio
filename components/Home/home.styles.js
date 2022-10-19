@@ -4,8 +4,6 @@ import THEME from "../../styles/theme";
 
 const StyledHome = styled(StyledMain)`
 
-	max-width: 980px;
-
 	p{
 		margin-bottom: ${THEME.spacing.default};
 		font-size: ${THEME.fontSize.middle};
@@ -21,7 +19,8 @@ const StyledHome = styled(StyledMain)`
 	}
 
 	.profile__story{
-		width: 55%;
+		width: 60%;
+		margin-right: ${THEME.spacing.large};
 		float: left;
 		font-family: 'Noto Serif', serif;
 
@@ -53,6 +52,7 @@ const StyledHome = styled(StyledMain)`
 
 		.profile__story{
 			width: 100%;
+			margin-right: 0;
 			margin-bottom: ${THEME.spacing.large}; 
 		}
   }

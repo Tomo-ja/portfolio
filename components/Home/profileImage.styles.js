@@ -4,7 +4,7 @@ import { floatingUpAnimation } from "../../styles/animations.styles";
 import THEME from "../../styles/theme";
 
 const StyledProfileImage = styled(StyledImage)`
-	width: max(250px, 40%);
+	width: max(300px, 30%);
 	display:block;
 	aspect-ratio: 1;
 	margin-bottom: ${THEME.spacing.default};

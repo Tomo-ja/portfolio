@@ -52,7 +52,7 @@ const StyledProjects = styled(StyledMain)`
 			margin-bottom: ${THEME.spacing.small};
 			font-family: 'Roboto', sans-serif;
 			font-weight: 300;
-			overflow: scroll;
+			overflow-y: scroll;
 		}
 
 		&__external-links{
@@ -65,6 +65,26 @@ const StyledProjects = styled(StyledMain)`
 		}
 	}
 
+	@media only screen and (max-width: 895px)  {
+		p{
+			font-size: ${THEME.fontSize.small};
+		}
+		.project__env{
+			margin-block: ${THEME.spacing.default}
+		}
+  }
+
+	@media only screen and (max-width: 705px)  {
+		p{
+			font-size: ${THEME.fontSize.default};
+		}
+  }
+
+	@media only screen and (max-width: 465px)  {
+		p{
+			font-size: ${THEME.fontSize.small};
+		}
+  }
 
 `
 
