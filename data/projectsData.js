@@ -5,7 +5,7 @@ const projectsData = [
 		productUrl: 'http://ookstore-20221014214828-hostingbucket-dev.s3-website.ca-central-1.amazonaws.com/',
 		title: 'Book Store',
 		description: [
-			'Simple E-commas site for book lover. You can see books, add to shopping cart, checkout, and payment',
+			'Simple E-commas site for book lover. You can see books, add to shopping cart, checkout, and payment.',
 			'Using Amplify as backend and Stripe as payment service makes this application actually works. Hidden path /admin allows book store owner to upload new book within the app.'
 		],
 		envList: ['React', 'Typescript', 'AWS - Amplify']
@@ -13,13 +13,13 @@ const projectsData = [
 	{
 		imgUrl: '/cookitApp.png',
 		githubUrl: 'https://github.com/Tomo-ja/cook-friends',
-		productUrl: 'https://github.com/Tomo-ja',
+		productUrl: 'https://cook-friends.vercel.app/',
 		title: 'Cookit',
 		description: [
-			'Cooking helper application. You can browse many recipes, add to favorite list, store ingredients to cook a recipe. At a grocery shopping, you can see them and store to cloud fridge if you buy. Cloud fridge helps you to manage your cooking plan before ingredients expire.',
-			'Because this is using free plan of spoonacular api, sometimes application display only sample data when it hit limitation.'
+			'Full stack cooking helper application. Browse recipes, managing Fridge, and Shopping efficient all in one this app',
+			'This is team project with one of my awesome classmate. Through this app, I gained a lot of soft skills as a team member as well as hard skills.'
 		],
-		envList: ['Next.js', 'Styled Component']
+		envList: ['Next.js', 'Typescript', 'MongoDB', 'Styled Component']
 	},
 	{
 		imgUrl: '/invoiceManager.png',
@@ -35,25 +35,34 @@ const projectsData = [
 	{
 		imgUrl: '/expenseTracker.png',
 		githubUrl: 'https://github.com/yk-jp/expense-tracker-frontend',
-		productUrl: 'https://github.com/Tomo-ja',
+		productUrl: null,
 		title: 'Expense Tracker',
-		description: ['This is short description of the app.'],
-		envList: ['React', 'Typescript', 'Sass']
+		description: [
+			'Full stack application where you can track your income/expense visually by graphs. I was in charge of all frontend site to actually use Python program which is developed by my friend.',
+			'First time to use Typescript, Tailwind for design, and Redux for managing state build up my another frontend skills a lot.'
+	],
+		envList: ['React', 'Typescript', 'Tailwind', 'Redux']
 	},
 	{
 		imgUrl: '/cryptoApp.png',
 		githubUrl: 'https://github.com/Tomo-ja/crypto-app',
 		productUrl: null,
 		title: 'Crypto App',
-		description: ['Crypto information application. '],
-		envList: ['React', 'Redux Toolkit', 'Ant Design', 'Chart js']
+		description: [
+			'Crypto information app for investors to track and see them at once provided by Coinranking.',
+			'Leaning Redux Toolkit allows me to fetch api data simple and easy to maintain. I used combination of Ant Design for design structure and pure css for details to make app fast.'
+	],
+		envList: ['React', 'Typescript', 'Redux Toolkit', 'Ant Design', 'Chart js']
 	},
 	{
 		imgUrl: '/wordleCopy.png',
 		githubUrl: 'https://github.com/Tomo-ja/wordle-copy',
 		productUrl: 'https://tomo-ja.github.io/wordle-copy/',
 		title: 'Wordle Copy',
-		description: ['This is short description of the app.'],
+		description: [
+			'Copy of actual web game Wordle. I developed this entire game using pure HTML, css, and Javascript without any other framework.',
+			'Simple application without backend, yet, I hope you can find how I think logically to make this run.'
+		],
 		envList: ['HTML', 'CSS', 'JavaScript']
 	},
 	{
@@ -61,7 +70,10 @@ const projectsData = [
 		githubUrl: 'https://github.com/Tomo-ja/weather-app',
 		productUrl: null,
 		title: 'Weather app',
-		description: ['This is short description of the app.'],
+		description: [
+			'Traditional weather application using React for first time, for me. You can see real/future time weather information provided by Open Weather api.',
+			'User can register favorite cities for the next time, which will be stored on local storage of browser.'
+		],
 		envList: ['React', 'CSS', 'JavaScript']
 	},
 	{
@@ -69,15 +81,20 @@ const projectsData = [
 		githubUrl: 'https://github.com/Tomo-ja',
 		productUrl: 'https://tomo-ja.github.io/stack-game/',
 		title: 'Stack game',
-		description: ['This is short description of the app.'],
+		description: [
+			'First school project after learn basic HTML, CSS, JavaScript. User will try to pile 2D box as high as they can pressing keyboard S in a different mode.',
+			'They will beat old record they made in a same mode.'
+		],
 		envList: ['HTML', 'CSS', 'JavaScript']
 	},
 	{
 		imgUrl: '/blackJack.png',
-		githubUrl: 'https://github.com/Tomo-ja',
+		githubUrl: 'https://github.com/Tomo-ja/BlackJack',
 		productUrl: null,
 		title: 'Black Jack',
-		description: ['This is short description of the app.'],
+		description: [
+			'First application build by Ruby on Rails. Single user can play black jack game with computer.'
+		],
 		envList: ['Ruby on Rails', 'CSS',]
 	},
 ]

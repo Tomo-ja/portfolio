@@ -39,13 +39,17 @@ const StyledProjects = styled(StyledMain)`
 		}
 
 		&__env{
-			display: inline-block;
-			margin-right: ${THEME.spacing.default};
-			margin-bottom: ${THEME.spacing.large};
-			color: ${THEME.colors.black};
-			font-family: 'Raleway', sans-serif;
-			font-size: ${THEME.fontSize.small};
-			font-weight: bold;
+			margin-bottom: ${THEME.spacing.middle};
+
+			span{
+				display: inline-block;
+				color: ${THEME.colors.black};
+				font-family: 'Raleway', sans-serif;
+				font-size: ${THEME.fontSize.small};
+				font-weight: bold;
+				margin-right: ${THEME.spacing.default};
+
+			}
 		}
 
 		&__description{

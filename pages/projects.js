@@ -65,9 +65,11 @@ const Projects = () => {
 								<div className="cube__face cube__face-right project__detail">
 									<div>
 										<h3 className="project__title-right">{project.title}</h3>
-										{project.envList.map(env => (
-											<span key={env} className='project__env'>{env}</span>
-										))}
+										<div className='project__env'>
+											{project.envList.map(env => (
+												<span key={env}>{env}</span>
+											))}
+										</div>
 										{project.description.map(paragraph => (
 											<p className="project__description" key={paragraph[0]}>{paragraph}</p>
 										))}

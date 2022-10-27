@@ -34,6 +34,7 @@ const StyledMain = styled.main `
 
 	span.yellow{
 		color: ${THEME.colors.yellow};
+		font-weight: bold;
 	}
 
 	span.bold{

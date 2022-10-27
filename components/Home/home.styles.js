@@ -4,8 +4,10 @@ import THEME from "../../styles/theme";
 
 const StyledHome = styled(StyledMain)`
 
+	padding-bottom: ${THEME.spacing.xLarge};
+
 	p{
-		margin-bottom: ${THEME.spacing.default};
+		margin-bottom: ${THEME.spacing.middle};
 		font-size: ${THEME.fontSize.middle};
 		line-height: 1.5em;
 		letter-spacing: 0.025em;
