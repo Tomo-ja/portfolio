@@ -25,32 +25,38 @@ const StyledProjects = styled(StyledMain)`
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			padding: ${THEME.spacing.default};
 		}
 
 		&__title-front{
-			border: 1px solid ${THEME.colors.white};
 			padding: ${THEME.spacing.default};
 		}
 
 		&__title-right{
+			background-color: ${THEME.colors.green};
 			font-size: ${THEME.fontSize.large};
 			margin-bottom: ${THEME.spacing.small};
 		}
 
 		&__env{
-			display: inline-block;
-			margin-right: ${THEME.spacing.default};
-			margin-bottom: ${THEME.spacing.large};
-			color: ${THEME.colors.lightGray};
-			font-family: 'Raleway', sans-serif;
-			font-size: ${THEME.fontSize.small};
+			margin-bottom: ${THEME.spacing.middle};
+
+			span{
+				display: inline-block;
+				color: ${THEME.colors.black};
+				font-family: 'Raleway', sans-serif;
+				font-size: ${THEME.fontSize.small};
+				font-weight: bold;
+				margin-right: ${THEME.spacing.default};
+
+			}
 		}
 
 		&__description{
 			margin-bottom: ${THEME.spacing.small};
 			font-family: 'Roboto', sans-serif;
 			font-weight: 300;
-			overflow: scroll;
+			overflow-y: scroll;
 		}
 
 		&__external-links{
@@ -63,6 +69,26 @@ const StyledProjects = styled(StyledMain)`
 		}
 	}
 
+	@media only screen and (max-width: 895px)  {
+		p{
+			font-size: ${THEME.fontSize.small};
+		}
+		.project__env{
+			margin-block: ${THEME.spacing.default}
+		}
+  }
+
+	@media only screen and (max-width: 705px)  {
+		p{
+			font-size: ${THEME.fontSize.default};
+		}
+  }
+
+	@media only screen and (max-width: 465px)  {
+		p{
+			font-size: ${THEME.fontSize.small};
+		}
+  }
 
 `
 

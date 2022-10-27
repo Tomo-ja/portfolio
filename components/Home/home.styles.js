@@ -4,22 +4,28 @@ import THEME from "../../styles/theme";
 
 const StyledHome = styled(StyledMain)`
 
-	max-width: 980px;
+	padding-bottom: ${THEME.spacing.xLarge};
 
 	p{
-		margin-bottom: ${THEME.spacing.default};
+		margin-bottom: ${THEME.spacing.middle};
 		font-size: ${THEME.fontSize.middle};
-		line-height: 1.2em;
+		line-height: 1.5em;
 		letter-spacing: 0.025em;
 	}
 
 	.profile {
 		width: 100%;
+		display: flex;
+		justify-content: space-between;
 		margin-top: ${THEME.spacing.xLarge};
 	}
 
 	.profile__story{
-		font-family: 'Roboto', sans-serif;
+		width: 60%;
+		margin-right: ${THEME.spacing.large};
+		float: left;
+		font-family: 'Noto Serif', serif;
+
 	}
 
 	.first-letter{
@@ -37,17 +43,22 @@ const StyledHome = styled(StyledMain)`
 		}
   }
 
-	@media only screen and (max-width: 760px)  {
+	@media only screen and (max-width: 800px)  {
 		p{
 			font-size: ${THEME.fontSize.default};
 			
 		}
+		.profile{
+			flex-direction: column;
+		}
+
 		.profile__story{
-			margin-block: ${THEME.spacing.large}; 
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: ${THEME.spacing.large}; 
 		}
   }
 
-	
 `
 
 export default StyledHome

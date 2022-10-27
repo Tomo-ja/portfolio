@@ -14,6 +14,7 @@ const StyledMain = styled.main `
 		font-size: ${THEME.fontSize.xxLarge};
 		text-transform: uppercase;
 		font-weight: 400;
+		margin-bottom: 1em;
 	}
 
 	h2{
@@ -27,12 +28,21 @@ const StyledMain = styled.main `
 		color: ${THEME.colors.lightBlue};
 	}
 
+	span.light-red{
+		color: ${THEME.colors.lightRed};
+	}
+
+	span.yellow{
+		color: ${THEME.colors.yellow};
+		font-weight: bold;
+	}
+
 	span.bold{
 		font-weight: 700;
 	}
 
 	span.underLine {
-		border-bottom: 1px solid ${THEME.colors.lightBlue};
+		border-bottom: 2px solid ${THEME.colors.yellow};
 		cursor: pointer;
 	}
 

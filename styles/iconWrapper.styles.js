@@ -9,7 +9,7 @@ const StyledIconWrapper = styled.div`
 	justify-content: center;
 	align-items: center;
 	background-color: ${THEME.colors.black};
-	border: 1px solid ${THEME.colors.lightBlue};
+	border: 1px solid ${props => props.onProject ? THEME.colors.black : THEME.colors.lightBlue};
 	transition: all 0.25s;
 
 	svg{
@@ -19,12 +19,13 @@ const StyledIconWrapper = styled.div`
 	}
 
 	:hover{
-		background-color: ${THEME.colors.lightBlue};
+		background-color: ${props => props.onProject ? THEME.colors.white : THEME.colors.lightBlue};
 
 		svg{
 			color: ${THEME.colors.black};
 		}
 	}
+
 `
 
 export default StyledIconWrapper

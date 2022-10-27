@@ -20,19 +20,21 @@ const Contact = () => {
 				<link rel='icon' href='/favicon.ico'/>
 			</Head>
 			<StyledContact>
-				<h2>
+				<h1>
 					Say Hello<br />
 					<span className='blue'>We would be delighted to hear from you</span>
-				</h2>
+				</h1>
 
 				<section>
+
 					<Form />
+
 					<div className="accountInfo">
-						<StyledAccountInfo href='https://www.linkedin.com/in/Tomo-ja' target='_blank'>
+						<StyledAccountInfo href='https://www.linkedin.com/in/Tomonao' target='_blank'>
 							<StyledIconWrapper>
 								<FontAwesomeIcon icon={faLinkedinIn} color="white"/>
 							</StyledIconWrapper>
-							<p>https://www.linkedin.com/in/Tomo-ja</p>
+							<p>https://www.linkedin.com/in/Tomonao</p>
 						</StyledAccountInfo>
 						<StyledAccountInfo href='https://github.com/Tomo-ja' target='_blank'>
 							<StyledIconWrapper>
