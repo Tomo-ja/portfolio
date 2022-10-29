@@ -83,7 +83,7 @@ const StyledForm = styled.form`
 	}
 
 	@media only screen and (max-width: 760px)  {
-		flex-grow: 1;
+		width: 100%;
   }
 `
 
