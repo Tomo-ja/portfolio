@@ -46,7 +46,7 @@ const projectsData = [
 	{
 		imgUrl: '/cryptoApp.png',
 		githubUrl: 'https://github.com/Tomo-ja/crypto-app',
-		productUrl: null,
+		productUrl: 'https://crypto-app-zeta.vercel.app/',
 		title: 'Crypto App',
 		description: [
 			'Crypto information app for investors to track and see them at once provided by Coinranking.',
