@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: 'Playfair Display', serif;
   background-color: #06191D;
+  scroll-behavior: smooth;
 }
 
 * {

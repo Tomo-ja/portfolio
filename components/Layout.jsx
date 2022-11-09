@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { ThemeProvider } from "styled-components";
 import Header from "./Header/index";
+import Footer from "./Footer";
 
 import theme from "../styles/theme";
 
@@ -11,6 +12,7 @@ class Layout extends Component {
 				<>
 					<Header />
 					{children}
+					<Footer />
 				</>
 			)
 	}

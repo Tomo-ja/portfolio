@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import StyledHeader from "./header.styles";
 import LogoImage from './logo.styles';
@@ -19,9 +20,9 @@ const Header = () => {
 				</LogoImage>
 				
 				<ul>
-					<li><Link href='/'>Home</Link></li>
-					<li><Link href='/projects'>Projects</Link></li>
-					<li><Link href='/contact'>Contact</Link></li>
+					<li><AnchorLink href='#projects'>Home</AnchorLink></li>
+					<li><AnchorLink href='#profile'>Profile</AnchorLink></li>
+					<li><AnchorLink href='#contact'>Contact</AnchorLink></li>
 					<li><a href='/Resume.pdf' target='_blank' rel="noopener noreferrer">Resume</a></li>
 				</ul>
 			</nav>

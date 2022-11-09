@@ -3,8 +3,10 @@ import StyledMain from "../../styles/main.styles";
 import THEME from "../../styles/theme";
 
 const StyledHome = styled(StyledMain)`
-
-	padding-bottom: ${THEME.spacing.xLarge};
+	padding-top: 120px;
+	h1{
+		text-align: right;
+	}
 
 	p{
 		margin-bottom: ${THEME.spacing.middle};

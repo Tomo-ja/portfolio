@@ -1,5 +1,16 @@
 const projectsData = [
 	{
+		imgUrl: '/expenseTracker.png',
+		githubUrl: 'https://github.com/yk-jp/expense-tracker-frontend',
+		productUrl: null,
+		title: 'Expense Tracker',
+		description: [
+			'Full stack application where you can track your income/expense visually by graphs. I was in charge of all frontend site to actually use Python program which is developed by my friend.',
+			'First time to use Typescript, Tailwind for design, and Redux for managing state build up my another frontend skills a lot.'
+	],
+		envList: ['React', 'Typescript', 'Tailwind', 'Redux']
+	},
+	{
 		imgUrl: '/bookOnlineStore.png',
 		githubUrl: 'https://github.com/Tomo-ja/Book-store',
 		productUrl: 'http://ookstore-20221014214828-hostingbucket-dev.s3-website.ca-central-1.amazonaws.com/',
@@ -33,17 +44,6 @@ const projectsData = [
 		envList: ['Swift', 'Google authentication']
 	},
 	{
-		imgUrl: '/expenseTracker.png',
-		githubUrl: 'https://github.com/yk-jp/expense-tracker-frontend',
-		productUrl: null,
-		title: 'Expense Tracker',
-		description: [
-			'Full stack application where you can track your income/expense visually by graphs. I was in charge of all frontend site to actually use Python program which is developed by my friend.',
-			'First time to use Typescript, Tailwind for design, and Redux for managing state build up my another frontend skills a lot.'
-	],
-		envList: ['React', 'Typescript', 'Tailwind', 'Redux']
-	},
-	{
 		imgUrl: '/cryptoApp.png',
 		githubUrl: 'https://github.com/Tomo-ja/crypto-app',
 		productUrl: 'https://crypto-app-zeta.vercel.app/',
@@ -64,38 +64,6 @@ const projectsData = [
 			'Simple application without backend, yet, I hope you can find how I think logically to make this run.'
 		],
 		envList: ['HTML', 'CSS', 'JavaScript']
-	},
-	{
-		imgUrl: '/weatherApp.png',
-		githubUrl: 'https://github.com/Tomo-ja/weather-app',
-		productUrl: null,
-		title: 'Weather app',
-		description: [
-			'Traditional weather application using React for first time, for me. You can see real/future time weather information provided by Open Weather api.',
-			'User can register favorite cities for the next time, which will be stored on local storage of browser.'
-		],
-		envList: ['React', 'CSS', 'JavaScript']
-	},
-	{
-		imgUrl: '/stackGame.png',
-		githubUrl: 'https://github.com/Tomo-ja',
-		productUrl: 'https://tomo-ja.github.io/stack-game/',
-		title: 'Stack game',
-		description: [
-			'First school project after learn basic HTML, CSS, JavaScript. User will try to pile 2D box as high as they can pressing keyboard S in a different mode.',
-			'They will beat old record they made in a same mode.'
-		],
-		envList: ['HTML', 'CSS', 'JavaScript']
-	},
-	{
-		imgUrl: '/blackJack.png',
-		githubUrl: 'https://github.com/Tomo-ja/BlackJack',
-		productUrl: null,
-		title: 'Black Jack',
-		description: [
-			'First application build by Ruby on Rails. Single user can play black jack game with computer.'
-		],
-		envList: ['Ruby on Rails', 'CSS',]
 	},
 ]
 

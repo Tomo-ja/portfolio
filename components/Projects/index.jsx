@@ -1,15 +1,14 @@
-import Head from "next/head"
 import { useEffect, useState } from "react"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 
-import StyledProjects from "../components/Projects/projects.styles"
-import StyledIconWrapper from "../styles/iconWrapper.styles"
-import StyledCube from "../components/Projects/cube.styles"
+import StyledProjects from "./projects.styles"
+import StyledIconWrapper from "../../styles/iconWrapper.styles"
+import StyledCube from "./cube.styles"
 
-import projectsData from "../data/projectsData"
+import projectsData from "../../data/projectsData"
+
 
 const Projects = () => {
 
@@ -40,15 +39,11 @@ const Projects = () => {
 	}, [])
 
 	return (
-		<div>
-			<Head>
-				<title>Projects</title>
-        <link rel='icon' href='/favicon.ico'/>
-			</Head>
+		<div id='projects'>
 			<StyledProjects>
-				<h1>I am Junior<br />
-					<span className="blue">But I am good at what I do</span>
-				</h1>
+				<h1>Hi, I am Tomo<br />
+          <span className='blue'>React / iOS Developer In Vancouver </span>
+        </h1>
 				<section>
 					{projectsData.map(project => (
 						<StyledCube 
