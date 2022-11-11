@@ -1,8 +1,8 @@
 const projectsData = [
 	{
 		imgUrl: '/expenseTracker.png',
-		githubUrl: 'https://github.com/yk-jp/expense-tracker-frontend',
-		productUrl: null,
+		githubUrl: 'https://github.com/yk-jp/expense-tracker',
+		productUrl: 'https://expense-tracker.art',
 		title: 'Expense Tracker',
 		description: [
 			'Full stack application where you can track your income/expense visually by graphs. I was in charge of all frontend site to actually use Python program which is developed by my friend.',
