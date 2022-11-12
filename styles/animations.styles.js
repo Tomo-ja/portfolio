@@ -1,4 +1,5 @@
 import { keyframes, Keyframes } from "styled-components";
+import THEME from "./theme";
 
 export const floatingUpAnimation = keyframes`
 	0%{ 
@@ -12,6 +13,23 @@ export const floatingUpAnimation = keyframes`
 `
 
 
-export const moveRightAnimation = keyframes`
-
+export const skillNamePopup = keyframes`
+	0%{
+		width: 0;
+		padding: 0;
+		border: none;
+		transform: translateY(10px) ;
+		color: ${THEME.colors.black};
+		opacity: 0;
+		z-index: 0;
+	}
+	100%{
+		width: max-content;
+		padding: ${THEME.spacing.small};
+		border: 2px solid ${THEME.colors.lightBlue};
+		transform: translateY(40px);
+		color: ${THEME.colors.white};
+		opacity: 1;
+		z-index: 20;
+	}
 `

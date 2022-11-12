@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { ThemeConsumer } from "styled-components";
 import THEME from "./theme";
 
 
@@ -7,6 +7,8 @@ const StyledMain = styled.main `
 	width: 90%;
 	max-width: 1220px;
 	margin: auto;
+	padding-top: ${THEME.spacing.headerSize};
+	margin-bottom: ${THEME.spacing.xLarge};
 
 	color: ${THEME.colors.white};
 

@@ -1,20 +1,24 @@
-import styled from "styled-components";
+import styled, { ThemeConsumer } from "styled-components";
 import THEME from "../../styles/theme";
 
 
 const StyledHeader = styled.header`
 
-	width: 90%;
-	max-width: 1220px;
-	margin-inline: auto;
+	width: 100vw;
 	padding-block: ${THEME.spacing.default};
+	background-color: ${THEME.colors.black};
+	position: fixed;
+	top: 0;
+	z-index: 999;
 
 	font-family: 'Raleway', sans-serif;
 
 	nav{
 		display: flex;
-		width: 100%;
+		width: 90%;
+		max-width: 1220px;
 		height: 100%;
+		margin-inline: auto;
 		justify-content: space-between;
 		align-items: center;
 	}

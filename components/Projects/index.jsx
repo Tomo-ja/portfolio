@@ -1,15 +1,14 @@
-import Head from "next/head"
 import { useEffect, useState } from "react"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 
-import StyledProjects from "../components/Projects/projects.styles"
-import StyledIconWrapper from "../styles/iconWrapper.styles"
-import StyledCube from "../components/Projects/cube.styles"
+import StyledProjects from "./projects.styles"
+import StyledIconWrapper from "../../styles/iconWrapper.styles"
+import StyledCube from "./cube.styles"
 
-import projectsData from "../data/projectsData"
+import projectsData from "../../data/projectsData"
+
 
 const Projects = () => {
 
@@ -40,15 +39,11 @@ const Projects = () => {
 	}, [])
 
 	return (
-		<div>
-			<Head>
-				<title>Projects</title>
-        <link rel='icon' href='/favicon.ico'/>
-			</Head>
+		<div id='projects'>
 			<StyledProjects>
-				<h1>I am Junior<br />
-					<span className="blue">But I am good at what I do</span>
-				</h1>
+				<h1>Hi, I am Tomo<br />
+          <span className='blue'>React / iOS Developer In Vancouver </span>
+        </h1>
 				<section>
 					{projectsData.map(project => (
 						<StyledCube 
@@ -60,7 +55,12 @@ const Projects = () => {
 									className="cube__face cube__face-front" 
 									style={{backgroundImage: `url(${project.imgUrl})`}}
 								>
-									<h3 className="project__title-front">{project.title}</h3>
+									<div className="project__title-front">
+										<h3 >{project.title}</h3>
+										{project.envList.map(env => (
+											<span key={env} className="project__title-front__skill">{env}</span>
+										))}
+									</div>
 								</div>
 								<div className="cube__face cube__face-right project__detail">
 									<div>

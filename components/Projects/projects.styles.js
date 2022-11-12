@@ -4,6 +4,7 @@ import THEME from "../../styles/theme";
 
 const StyledProjects = styled(StyledMain)`
 
+
 	h2{
 		margin-bottom: 2em;
 	}
@@ -30,6 +31,15 @@ const StyledProjects = styled(StyledMain)`
 
 		&__title-front{
 			padding: ${THEME.spacing.default};
+			background-color: ${THEME.colors.black};
+			text-align: right;
+
+			&__skill{
+				display: inline-block;
+				margin-left: ${THEME.spacing.small};
+				color: ${THEME.colors.lightBlue};
+				font-size: ${THEME.fontSize.xSmall};
+			}
 		}
 
 		&__title-right{

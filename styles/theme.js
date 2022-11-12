@@ -19,7 +19,7 @@ const THEME = {
 			middle: '18px',
 			large: '24px',
 			xLarge: '32px',
-			xxLarge: '52px'
+			xxLarge: '52px',
 		},
 	spacing: 
 		{
@@ -29,6 +29,8 @@ const THEME = {
 			large: '36px',
 			xLarge: '54px',
 			xxLarge: '76px',
+			xxxLarge: '146px',
+			headerSize: '110px'
 		},
 	radius:
 		{

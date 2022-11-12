@@ -1,34 +1,22 @@
-import Head from "next/head"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 
-import Form from '../components/Contact/form'
-
-import StyledContact from '../components/Contact/contact.styles'
-import StyledAccountInfo from '../components/Contact/accountInfo.styles'
-import StyledIconWrapper from "../styles/iconWrapper.styles"
-
+import Form from "./form"
+import StyledContact from "./contact.styles"
+import StyledAccountInfo from "./accountInfo.styles"
+import StyledIconWrapper from "../../styles/iconWrapper.styles"
 
 
 const Contact = () => {
-
 	return (
-		<div>
-			<Head>
-				<title>Contact</title>
-				<link rel='icon' href='/favicon.ico'/>
-			</Head>
+		<div id='contact'>
 			<StyledContact>
 				<h1>
 					Say Hello<br />
 					<span className='blue'>We would be delighted to hear from you</span>
 				</h1>
-
 				<section>
-
 					<Form />
-
 					<div className="accountInfo">
 						<StyledAccountInfo href='https://www.linkedin.com/in/Tomonao' target='_blank'>
 							<StyledIconWrapper>
@@ -45,7 +33,6 @@ const Contact = () => {
 					</div>
 				</section>
 			</StyledContact>
-
 		</div>
 	)
 }
