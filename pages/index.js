@@ -4,11 +4,12 @@ import Link from 'next/link'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Projects from '../components/Projects'
+import Contact from '../components/Contact'
+import SkillsSets from '../components/Home/skillsSets'
 
 import StyledHome from '../components/Home/home.styles'
 import StyledProfileImage from '../components/Home/profileImage.styles'
-import Projects from '../components/Projects'
-import Contact from '../components/Contact'
 
 const Home = () => {
 
@@ -38,6 +39,7 @@ const Home = () => {
             />
           </StyledProfileImage>
         </section>
+        <SkillsSets />
       </StyledHome>
       <Contact />
       <Footer />
