@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -12,6 +13,15 @@ import StyledHome from '../components/Home/home.styles'
 import StyledProfileImage from '../components/Home/profileImage.styles'
 
 const Home = () => {
+  const [init, setInit] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setInit(false)
+    }, 1)
+  }, [])
+
+  if (init) return <></>
 
   return (
     <div>
