@@ -1,29 +1,7 @@
 const projectsData = [
 	{
-		imgUrl: '/expenseTracker.png',
-		githubUrl: 'https://github.com/yk-jp/expense-tracker',
-		productUrl: 'https://expense-tracker.art',
-		title: 'Expense Tracker',
-		description: [
-			'Full stack application where you can track your income/expense visually by graphs. I was in charge of all frontend site to actually use Python program which is developed by my friend.',
-			'First time to use Typescript, Tailwind for design, and Redux for managing state build up my another frontend skills a lot.'
-	],
-		envList: ['React', 'Typescript', 'Tailwind', 'Redux']
-	},
-	{
-		imgUrl: '/bookOnlineStore.png',
-		githubUrl: 'https://github.com/Tomo-ja/Book-store',
-		productUrl: 'http://ookstore-20221014214828-hostingbucket-dev.s3-website.ca-central-1.amazonaws.com/',
-		title: 'Book Store',
-		description: [
-			'Simple E-commas site for book lover. You can see books, add to shopping cart, checkout, and payment.',
-			'Using Amplify as backend and Stripe as payment service makes this application actually works. Hidden path /admin allows book store owner to upload new book within the app.'
-		],
-		envList: ['React', 'Typescript', 'AWS - Amplify']
-	},
-	{
 		imgUrl: '/cookitApp.png',
-		githubUrl: 'https://github.com/Tomo-ja/cook-friends',
+		githubUrl: 'https://github.com/Tomo-ja/cook-friends-v2',
 		productUrl: 'https://cook-friends.vercel.app/',
 		title: 'Cookit',
 		description: [
@@ -42,6 +20,28 @@ const projectsData = [
 			'I was a member of actual company for this this project voluntarily.'
 	],
 		envList: ['Swift', 'Google authentication']
+	},
+	{
+		imgUrl: '/bookOnlineStore.png',
+		githubUrl: 'https://github.com/Tomo-ja/Book-store',
+		productUrl: 'http://ookstore-20221125214345-hostingbucket-dev.s3-website.ca-central-1.amazonaws.com/',
+		title: 'Book Store',
+		description: [
+			'Simple E-commas site for book lover. You can see books, add to shopping cart, checkout, and payment.',
+			'Using Amplify as backend and Stripe as payment service makes this application actually works. Hidden path /admin allows book store owner to upload new book within the app.'
+		],
+		envList: ['React', 'Typescript', 'AWS - Amplify']
+	},
+	{
+		imgUrl: '/expenseTracker.png',
+		githubUrl: 'https://github.com/yk-jp/expense-tracker',
+		productUrl: 'https://expense-tracker.art',
+		title: 'Expense Tracker',
+		description: [
+			'Full stack application where you can track your income/expense visually by graphs. I was in charge of all frontend site to actually use Python program which is developed by my friend.',
+			'First time to use Typescript, Tailwind for design, and Redux for managing state build up my another frontend skills a lot.'
+	],
+		envList: ['React', 'Typescript', 'Tailwind', 'Redux']
 	},
 	{
 		imgUrl: '/cryptoApp.png',
